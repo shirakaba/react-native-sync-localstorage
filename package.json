@@ -1,6 +1,6 @@
 {
   "name": "react-native-sync-localstorage",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "None async local storage",
   "main": "localStorage.js",
   "scripts": {
@@ -17,6 +17,13 @@
     "storage",
     "synchronous"
   ],
+  "peerDependencies: {
+    "@react-native-community/async-storage": "^1.6.3"
+  },
+  "dependencies: {},
+  "devDependencies: {
+    "@react-native-community/async-storage": "^1.6.3"
+  },
   "author": "https://github.com/yangga",
   "license": "ISC",
   "bugs": {
