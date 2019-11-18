@@ -50,7 +50,7 @@ function flatMap(allData) {
 
 function setItem(key, value) {
   storage.set(key, value)
-  AsyncStorage
+  return AsyncStorage
     .setItem(key, JSON.stringify(value))
     .then(handleSuccess)
     .catch(handleError)
@@ -58,7 +58,7 @@ function setItem(key, value) {
 
 function removeItem(key) {
   storage.remove(key)
-  AsyncStorage
+  return AsyncStorage
     .removeItem(key)
     .then(handleSuccess)
     .catch(handleError)
@@ -76,7 +76,7 @@ function getToken(value) {
 
 function clear() {
   storage.clearAll()
-  AsyncStorage
+  return AsyncStorage
     .clear()
     .then(handleSuccess)
     .catch(handleError)
